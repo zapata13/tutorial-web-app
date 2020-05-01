@@ -29,7 +29,7 @@ import { provisionFuseOnlineV4 } from './fuseOnlineServices';
 
 // The default services to watch.
 let defaultWatchServices = [
-  DEFAULT_SERVICES.CHE,
+  /*DEFAULT_SERVICES.CHE,
   DEFAULT_SERVICES.LAUNCHER,
   DEFAULT_SERVICES.THREESCALE,
   DEFAULT_SERVICES.APICURIO,
@@ -37,7 +37,7 @@ let defaultWatchServices = [
   DEFAULT_SERVICES.FUSE,
   DEFAULT_SERVICES.ENMASSE,
   DEFAULT_SERVICES.RHSSO,
-  DEFAULT_SERVICES.USER_RHSSO
+  DEFAULT_SERVICES.USER_RHSSO*/
 ];
 if (window.OPENSHIFT_CONFIG && window.OPENSHIFT_CONFIG.optionalWatchServices.length > 0) {
   defaultWatchServices = defaultWatchServices.concat(window.OPENSHIFT_CONFIG.optionalWatchServices);
@@ -46,17 +46,17 @@ const WATCH_SERVICES = defaultWatchServices;
 
 // The default services to show in any user-facing manner, even if they aren't
 // available. This is the opposite of the "hidden" flag in product info.
-const DISPLAY_SERVICES = [DEFAULT_SERVICES.ENMASSE];
+const DISPLAY_SERVICES = [];
 
 // The default services to provision.
 const PROVISION_SERVICES_OPENSHIFT_3 = [
-  DEFAULT_SERVICES.CHE,
+  /*DEFAULT_SERVICES.CHE,
   DEFAULT_SERVICES.LAUNCHER,
   DEFAULT_SERVICES.APICURIO,
   DEFAULT_SERVICES.THREESCALE,
   DEFAULT_SERVICES.FUSE_MANAGED,
   DEFAULT_SERVICES.RHSSO,
-  DEFAULT_SERVICES.USER_RHSSO
+  DEFAULT_SERVICES.USER_RHSSO*/
 ];
 
 const PROVISION_SERVICES_OPENSHIFT_4 = [];

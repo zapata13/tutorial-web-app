@@ -53,7 +53,7 @@ class EnMasseServiceInstanceTransform {
 }
 
 const DEFAULT_SERVICES = {
-  ENMASSE:
+  /*ENMASSE:
     window.OPENSHIFT_CONFIG && window.OPENSHIFT_CONFIG.openshiftVersion === 4 ? 'amqonline' : 'amq-online-standard',
   FUSE: 'fuse',
   CHE: 'codeready',
@@ -62,7 +62,7 @@ const DEFAULT_SERVICES = {
   APICURIO: 'apicurito',
   FUSE_MANAGED: 'fuse-managed',
   RHSSO: 'rhsso',
-  USER_RHSSO: 'user-rhsso'
+  USER_RHSSO: 'user-rhsso'*/
 };
 
 const DEFAULT_TRANSFORMS = [
